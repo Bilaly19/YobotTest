@@ -24,7 +24,7 @@ jobs:
 
       # Build the Docker image
       - name: Build the hello-docker Docker image
-        run: |
+        run: | 
           docker build -t ghcr.io/$USER/yobot:latest .
 
       # Install Trivy (Specific version v0.60.1)
